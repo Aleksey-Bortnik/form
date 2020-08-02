@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        body {
+
+            color: white;
+            background-color: black;
+            max-width: 137mm;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        p {
+            font-size: 16pt;
+        }
+    </style>
+</head>
+
+<body>
+    <div style="background: url(background.jpg);">
+        <form action="http://2016.makemepulse.com/">
+            <h1> Медицинский центр "VALHALLA"</h1>
+            <p> <input placeholder="Ваше имя" name="name"></p>
+            <p> <input placeholder="Ваш телефон" type="tel" name="phone"></p>
+            <p> <input placeholder="Электронный адрес" type="email" name="mail"></p>
+            <p> <input placeholder="Пароль" type="password" name="password"></p>
+            <br>
+            <p><b>В чём ваша проблема?</b></p>
+            <p><input name="service" type="radio" value="sick"> Не поднимается Мьёльнир</p>
+            <p><input name="service" type="radio" value="lonley"> Призвать Валькирий</p>
+            <p><input name="service" type="radio" value="done" checked> Своя атмосфера</p>
+            <p><b>Комментарий</b></p>
+            <textarea placeholder="Ваш комментарий очень важен для нас 🤪" name="comment" cols="70" rows="5"></textarea>
+            <p>
+                <input type="submit" value="Отправить">
+                <input type="reset" value="Очистить">
+            </p>
+        </form>
+    </div>
+</body>
+
+
+</html>
