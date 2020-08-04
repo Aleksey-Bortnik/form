@@ -5,36 +5,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Form</title>
-    <style>
-        body {
 
-            color: white;
-            background-color: black;
-            max-width: 137mm;
-            margin-left: auto;
-            margin-right: auto;
-        }
-
-        p {
-            font-size: 16pt;
-        }
-    </style>
 </head>
 
-<body>
+<body style="background-color: black; max-width: 137mm; margin-left: auto; margin-right: auto;">
     <div style="background: url(background.jpg);">
         <form action="http://2016.makemepulse.com/">
-            <h1> Медицинский центр "VALHALLA"</h1>
-            <p> <input placeholder="Ваше имя" name="name"></p>
-            <p> <input placeholder="Ваш телефон" type="tel" name="phone"></p>
-            <p> <input placeholder="Электронный адрес" type="email" name="mail"></p>
-            <p> <input placeholder="Пароль" type="password" name="password"></p>
+            <h1 style="color: azure;"> Медицинский центр "VALHALLA"</h1>
+
+            <label for="name" style="font-size: small; color: azure;">Вас будут звать...</label>
+            <p> <input placeholder="Ваше имя" type="text" name="name" id="name"></p>
+
+            <label for="tel" style="font-size: small; color: azure;">Номер для наших медсестричек.</label>
+            <p> <input placeholder="Ваш телефон" type="tel" name="phone" id="tel"></p>
+
+            <label for="mail" style="font-size: small; color: azure;">Куда слать спам?</label>
+            <p> <input placeholder="Электронный адрес" type="email" name="mail" id="mail"></p>
+
+            <label for="password" style="font-size: small; color: azure;">"12qw" лучше чем "1111"</label>
+            <p> <input placeholder="Пароль" type="password" name="password" id="password"></p>
             <br>
-            <p><b>В чём ваша проблема?</b></p>
-            <p><input name="service" type="radio" value="sick"> Не поднимается Мьёльнир</p>
-            <p><input name="service" type="radio" value="lonley"> Призвать Валькирий</p>
-            <p><input name="service" type="radio" value="done" checked> Своя атмосфера</p>
-            <p><b>Комментарий</b></p>
+            <p style="color: azure;"><b>В чём ваша проблема?</b></p>
+            <p style="color: azure;"><input name="service" type="radio" value="sick"> Не поднимается Мьёльнир</p>
+            <p style="color: azure;"><input name="service" type="radio" value="lonley"> Призвать Валькирий</p>
+            <p style="color: azure;"><input name="service" type="radio" value="done" checked> Дух Рагнара говорит со
+                мной</p>
+            <p style="color: azure;"><b>Комментарий</b></p>
             <textarea placeholder="Ваш комментарий очень важен для нас 🤪" name="comment" cols="70" rows="5"></textarea>
             <p>
                 <input type="submit" value="Отправить">
@@ -43,6 +39,5 @@
         </form>
     </div>
 </body>
-
 
 </html>
